@@ -12,7 +12,7 @@ Content-Type: application/json
   "name": "Mexico",
   "capital": "C. de Mexico",
   "currency": "MXN"
-}
+} s
 
 ###
 PUT http://localhost:3000/api/country/1 HTTP/1.1

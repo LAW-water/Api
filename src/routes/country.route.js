@@ -9,7 +9,7 @@ import {
 } from "../controllers/country.controller.js";
 
 const countryRouter = Router();
-
+  
 countryRouter.get("/", getCountries);
 
 countryRouter.get("/:id", getCountry);

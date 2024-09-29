@@ -68,7 +68,7 @@ export const deleteCountry = (req, res) => {
       res.status(200).json({
         message: "Country deleted successfully"
       });
-    })
+    })  
     .catch((err) => {
       res.status(500).send(err);
     });

@@ -7,21 +7,21 @@ const app = express();
 
 app.set("port", process.env.PORT || 3000);
 
-// middleware
+// software intermedio
 app.use(express.json());
 
-// routes
+// rutas
 app.use("/", indexRouter);
 app.use("*", (req, res) => {
   res.send("404 - not found");
 });
 
-// start server
+// inicia servidor
 app.listen(app.get("port"), () => {
   console.log("Server is running on port", app.get("port"));
 });
 
-// connect to database
+// conecta a la base de datos
 db.connect()
   .then(() => {
     console.log("Connected to database");
